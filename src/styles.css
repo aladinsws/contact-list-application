@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #eee;
+  font-family: sans-serif;
+}
+.contact-list-app {
+  background-color: white;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  max-width: 400px;
+  max-height: calc(100vh - 20px);
+  font-family: sans-serif;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+}
+
+.contact-list-header {
+  background-color: #4c68fe;
+  color: white;
+  padding: 20px;
+  position: relative;
+}
+.contact-list-header__add-icon {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+}
+.contact-list-header__title {
+  font-size: 1.6em;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.contact-list-header__search {
+  position: relative;
+}
+.contact-list-header__search-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-list-header__search-input {
+  width: 100%;
+  border: none;
+  border-radius: 0px;
+  padding: 10px;
+  padding-left: 35px;
+  font-weight: bold;
+}
+.contact-list {
+  overflow-y: hidden;
+}
+.contact-list:hover {
+  overflow-y: auto;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+.contact-item__image {
+  background-color: #4c68fe;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 22px;
+  width: 50px;
+  height: 50px;
+}
+.contact-item__content {
+  padding-left: 20px;
+  flex: 1;
+}
+.contact-item__name {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.contact-item__number {
+  font-size: 0.8em;
+  color: grey;
+}
+.contact-item__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-item__cancel-button,
+.contact-item__cancel-button:visited {
+  color: black;
+  /* text-decoration: none; */
+}
+.contact-item__add-button {
+  color: #79a279;
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+  font-size: 1em;
+  cursor: pointer;
+}
+.contact-item__remove-button {
+  visibility: hidden;
+}
+.contact-item:hover .contact-item__remove-button {
+  visibility: visible;
+}
+.more-button {
+  display: inline-block;
+  color: #4c68fe;
+  margin: 10px;
+  text-align: center;
+}
+.more-button a,
+.more-button a:visited {
+  color: inherit;
+  text-decoration: none;
+}
